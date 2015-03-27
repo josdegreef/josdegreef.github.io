@@ -27,6 +27,7 @@
   ga('send', 'pageview');
 
 </script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
 
   <body>
@@ -103,7 +104,8 @@
 			 
 <div id="emf-container" style='width:80%;float:left;'>
 	<div class="emf-error-message" style='display:none'></div>
-	<form id="emf-form" target="_self" class="topLabel" enctype="multipart/form-data" method="post" action="http://www.emailmeform.com/builder/form/MN2wcbb64ke"><div id="emf-form-instruction" class="emf-head-widget">
+	<form id="emf-form" target="_self" class="topLabel" enctype="multipart/form-data" method="post" action="http://www.emailmeform.com/builder/form/MN2wcbb64ke">
+	<div id="emf-form-instruction" class="emf-head-widget">
 		<div id="emf-form-description">(enkel voor inwoners van de Kaudenaardewijk)</div>
 		<ul>
 			<li id="emf-li-0" class="emf-li-field emf-field-text data_container   ">
@@ -140,7 +142,7 @@
 					<div my_choice_order_type="">
 						<div class="one_column" >
 							<input id="element_4_0" name="element_4" value="Geen berichten 's nachts (0u -7u)" class="validate[optional]"  type="radio" onchange="toggle_emf_element(EMF_jQuery(this).parents('.emf-li-field').find('.emf-allow-other input'), false)"/>
-							<label class="padleft-w5" for="element_4_0">Geen berichten 's nachts (0u -7u)</label>
+							<label class="padleft-w5" for="element_4_0" style='font-size:15px;' >Geen berichten 's nachts (0u -7u)</label>
 						</div>
 					</div>
 				</div>
@@ -152,11 +154,11 @@
 					<div my_choice_order_type="">
 						<div class="one_column" >
 							<input id="element_5_0" name="element_5[]" value="contant aan de BIN coördinator" class="validate[required,minCheckbox[1],maxCheckbox[1]]"  type="checkbox" />
-							<label class="padleft-w5" for="element_5_0">contant aan de BIN coördinator</label>
+							<label class="padleft-w5" for="element_5_0" style='font-size:15px;' >contant aan de BIN coördinator</label>
 						</div>
 						<div class="one_column" >
 							<input id="element_5_1" name="element_5[]" value="via overschrijving op BE52 4262 1970 8109 (De Koepel) met vermelding &quot;BIN + naam&quot;" class="validate[required,minCheckbox[1],maxCheckbox[1]]"  type="checkbox" />
-							<label class="padleft-w5" for="element_5_1">via overschrijving op BE52 4262 1970 8109 (De Koepel) met vermelding "BIN + naam"</label>
+							<label class="padleft-w5" for="element_5_1"style='font-size:15px;' >via overschrijving op BE52 4262 1970 8109 (De Koepel) met vermelding "BIN + naam"</label>
 						</div>
 					</div>
 				</div>
@@ -171,15 +173,15 @@
 					};
 					</script>
 					<div id='emf-recaptcha_widget' style='display:none;border-radius:5px;'>
-						<div id='recaptcha_image'></div>
+						<div id='recaptcha_image' style='border-radius:5px;'></div>
 						<div id='recaptcha_controls'>
-							<a title='Get a new challenge' href="javascript:Recaptcha.reload()">
+							<a title='Krijg een nieuwe code' href="javascript:Recaptcha.reload()">
 								<img src='//assets.emailmeform.com/images/recaptcha_refresh.png?RU1GLTAyLTIxLWNkNDQ5YTc%3D' alt='Get a new challenge'>
 							</a>
-							<a title='Get an audio challenge' href="javascript:Recaptcha.switch_type('audio')" class='recaptcha_only_if_image'>
+							<a title='Krijg een geluidscode' href="javascript:Recaptcha.switch_type('audio')" class='recaptcha_only_if_image'>
 								<img src='//assets.emailmeform.com/images/recaptcha_audio.png?RU1GLTAyLTIxLWNkNDQ5YTc%3D' alt='Get an audio challenge'>
 							</a>
-							<a title='Get a visual challenge' href="javascript:Recaptcha.switch_type('image')" class='recaptcha_only_if_audio'>
+							<a title='Krijg een visuele code' href="javascript:Recaptcha.switch_type('image')" class='recaptcha_only_if_audio'>
 								<img src='//assets.emailmeform.com/images/recaptcha_image.png?RU1GLTAyLTIxLWNkNDQ5YTc%3D' alt='Get a visual challenge'>
 							</a>
 							<a title='Help' href="javascript:Recaptcha.showhelp()">
@@ -187,7 +189,7 @@
 							</a>
 						</div>
 						<img id='recaptcha_logo' style='' src='https://www.google.com/recaptcha/api/img/clean/logo.png'>
-						<input type='text' id='recaptcha_response_field' name='recaptcha_response_field' placeholder='Type the text' style='border-radius:5px;' >
+						<input type='text' id='recaptcha_response_field' name='recaptcha_response_field' placeholder=' Geef de tekst in' style='border-radius:5px;' >
 					</div>
 					<script type="text/javascript" src="https://www.google.com/recaptcha/api/challenge?k=6LchicQSAAAAAGksQmNaDZMw3aQITPqZEsX77lT9"></script>
 					<noscript>
@@ -196,14 +198,15 @@
 						<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
 					</noscript>
 				</div>
+
 			</li>
 			<li id="emf-li-post-button" class="middle">
-				<input  value="Submit" type="submit" onmouseover="return true;"/> 
+				<input  id='submit' value=" Submit " type="submit" onmouseover="return true;"/> 
 			</li>
 		</ul>
 		<input name="element_counts" value="6" type="hidden" />
 		<input name="embed" value="forms" type="hidden" />
-<!-- pub -- 
+<!-- pub
 		<div style="margin-top:18px;text-align:center">
 			<div id='emf_advertisement'>
 				<font face="Verdana" size="2" color="#000000">Powered by</font>
@@ -221,7 +224,7 @@
 				</font>
 			</div>
 		</div>
-!-- pub -->
+pub -->
 	</form>
 </div>
 <!-- HTML code -->

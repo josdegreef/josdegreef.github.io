@@ -114,17 +114,23 @@ h3[id]:before{
 }
 
 #emf-container{
-	background-color:#FFFFFF;
+	background-color:#fafafa;
 	color:#000000;
 	font-size:15px;
 	border-radius:5px;
 }
+
+#emf-container li label.emf-label-desc{
+	color:#008cba;
+	font-size:15px;
+}
+
 #emf-container li #emf-li-captcha #emf-captcha-top-settings{
 	background-color:#00bff3;
 	color:#ffffff;
 }
 
-#emf-container li#emf-li-captcha #emf-captcha-bottom-settings{
+#emf-container li #emf-li-captcha #emf-captcha-bottom-settings{
 	background-color:transparent;
 }
 
@@ -146,3 +152,19 @@ h3[id]:before{
 		width: 100%;
 	}
 }
+
+
+#submit{
+    border-radius:6px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+/*!
+#submit:hover {
+    border: none;
+    background:red;
+    box-shadow: 0px 0px 1px #777;
+}
+*/
