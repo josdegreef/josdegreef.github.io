@@ -34,6 +34,7 @@
 
 </script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
 
   <body>
@@ -156,7 +157,12 @@
 				<div class="emf-clear"></div>
 			</li>
 			<li id="emf-li-recaptcha" >
-				<div>
+			
+				<div class="g-recaptcha" data-sitekey="6LdCfm4UAAAAALOinyNDWQ5wx6pXqXLvqNwzzCuI"></div>
+<!--				
+				<div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+-->				
+<!-- 			<div>
 					<script type="text/javascript">
 			        var RecaptchaOptions = {
 				        theme: 'custom',
@@ -189,7 +195,7 @@
 						<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
 					</noscript>
 				</div>
-
+-->
 			</li>
 			<li id="emf-li-post-button" class="middle">
 				<input  id='submit' value=" Submit " type="submit" onmouseover="return true;"/> 
